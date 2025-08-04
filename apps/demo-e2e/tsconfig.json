@@ -1,0 +1,8 @@
+{
+  "extends": "../../packages/e2e/tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../../packages/e2e/src/**/*.ts"
+  ]
+}

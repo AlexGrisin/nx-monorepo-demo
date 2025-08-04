@@ -1,0 +1,14 @@
+{
+  "executors": {
+    "browserstack": {
+      "implementation": "./src/executors/browserstack/executor",
+      "schema": "./src/executors/browserstack/schema.json",
+      "description": "browserstack executor"
+    },
+    "visual": {
+      "implementation": "./src/executors/visual/executor",
+      "schema": "./src/executors/visual/schema.json",
+      "description": "visual snapshot executors"
+    }
+  }
+}

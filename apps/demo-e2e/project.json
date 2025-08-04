@@ -1,0 +1,27 @@
+{
+  "name": "demo-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/demo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "browserstack": {
+      "executor": "./tools/executors:browserstack",
+      "options": {
+        "config": "apps/demo-e2e/playwright.bs.config.ts"
+      }
+    },
+    "visual": {
+      "executor": "./tools/executors:visual",
+      "options": {
+        "gcpBucketName": "visual-regression"
+      }
+    },
+    "visual-reset": {
+      "executor": "./tools/executors:visual",
+      "options": {
+        "gcpBucketName": "visual-regression",
+        "updateSnapshots": true
+      }
+    }
+  }
+}

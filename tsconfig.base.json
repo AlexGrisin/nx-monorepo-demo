@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "../../dist/out-tsc",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noImplicitReturns": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "alwaysStrict": true,
+    "importHelpers": true,
+    "noUncheckedSideEffectImports": true,
+    "strict": true,
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["es2021", "dom", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@demo/executors": ["tools/executors/src/index.ts"],
+      "@e2e/config": ["packages/e2e/src/config/index.ts"],
+      "@e2e/data": ["packages/e2e/src/data/index.ts"],
+      "@e2e/fixtures": ["packages/e2e/src/fixtures/index.ts"],
+      "@e2e/pageObjects": ["packages/e2e/src/pageObjects/index.ts"],
+      "@e2e/utils": ["packages/e2e/src/utils/index.ts"]
+    }
+  }
+}

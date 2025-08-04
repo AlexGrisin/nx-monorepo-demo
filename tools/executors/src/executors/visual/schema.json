@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "version": 1,
+  "title": "Visual Regression executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "gcpBucketName": {
+      "type": "string",
+      "description": "GCP Bucket name where the visual regression snapshots are stored"
+    },
+    "updateSnapshots": {
+      "type": "boolean",
+      "description": "Flag to update the visual regression snapshots"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "version": 2,
+  "title": "Browserstack executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "config": {
+      "type": "string",
+      "description": "Path to the Playwright config file"
+    }
+  },
+  "required": ["config"]
+}

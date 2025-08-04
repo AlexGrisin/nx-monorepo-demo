@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true
+  },
+  "files": [],
+  "include": [
+    "**/*.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.lib.json"
+    }
+  ]
+}
